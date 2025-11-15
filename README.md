@@ -8,11 +8,40 @@ Ferramentas para facilitar a instalação e utilização do Docker em servidores
 - Usuário com permissão `sudo`
 - `git` instalado para clonar o repositório
 
+## Instalar git (caso não esteja instalado)
+
+```bash
+sudo apt update
+sudo apt install -y git
+```
+
 ## Clonar o projeto
 
 ```bash
 git clone https://github.com/yuritorres/motor-octo-sem-erros.git
 cd motor-octo-sem-erros
+```
+
+### Usar sem git (baixando só o script)
+
+Se você não quiser instalar o `git`, pode baixar apenas o script de instalação diretamente do GitHub:
+
+Com `curl`:
+
+```bash
+curl -fsSL -o instalar-docker-ubuntu.sh \
+  https://raw.githubusercontent.com/yuritorres/motor-octo-sem-erros/main/scripts/instalar-docker-ubuntu.sh
+chmod +x instalar-docker-ubuntu.sh
+./instalar-docker-ubuntu.sh
+```
+
+Com `wget`:
+
+```bash
+wget -O instalar-docker-ubuntu.sh \
+  https://raw.githubusercontent.com/yuritorres/motor-octo-sem-erros/main/scripts/instalar-docker-ubuntu.sh
+chmod +x instalar-docker-ubuntu.sh
+./instalar-docker-ubuntu.sh
 ```
 
 ## Instalar Docker no Ubuntu Server
