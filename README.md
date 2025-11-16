@@ -22,6 +22,31 @@ git clone https://github.com/yuritorres/motor-octo-sem-erros.git
 cd motor-octo-sem-erros
 ```
 
+## Ferramenta central (motor-octo.sh)
+
+Este repositório inclui uma ferramenta central na raiz para facilitar o uso dos scripts:
+
+```bash
+chmod +x motor-octo.sh
+./motor-octo.sh
+```
+
+Ela mostra um menu com opções:
+
+- **1** – Instalar Docker
+- **2** – Instalar Portainer BE
+- **3** – Instalar Docker + Portainer BE
+- **0** – Sair
+
+Também é possível chamar diretamente por subcomandos:
+
+```bash
+./motor-octo.sh docker      # instala/configura Docker
+./motor-octo.sh portainer   # instala Portainer BE
+./motor-octo.sh all         # Docker + Portainer BE
+./motor-octo.sh help        # ajuda
+```
+
 ### Usar sem git (baixando só o script)
 
 Se você não quiser instalar o `git`, pode baixar apenas o script de instalação diretamente do GitHub:
